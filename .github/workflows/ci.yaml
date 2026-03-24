@@ -60,7 +60,8 @@ jobs:
   # ===============================
   deploy:
     needs: ci
-    runs-on: [manugit]
+    runs-on: aws-runner
+    
 
     steps:
       - name: Pull latest image
